@@ -81,9 +81,11 @@
 ---
 
 ## Wireframes
+![Wireframes](FF_Wireframe.png)
 ---
 
 ## ERD
+![ERD](FF_ERD.png)
 ---
 
 ## Explain the different high-level components (abstractions) in your app
