@@ -13,6 +13,8 @@
 
 ## Why Solve This Problem? 
 - Overall health and well-being are critical to the maintainence of a thriving life in the developed communities around planet earth today. It is easy for an individual to overlook or not place emphasis on these two facets of life when they are obfuscated by the obligations that most working adults face. However, a moderate and healthy focus on these two aspects of being lead to healthier humans who both live longer and are more productive members of the societies within which they exist. It is critical that, in the wake of a rapid expansion thanks to sensationalism on the part of the internet and influencers, regular humans develop a healthy relationship with health. Teaching them to focus on what works for them and what makes them feel best regardless of the influence of dubious products and sellers who seek to confuse attainment of health with attainment of wealth for themselves at the cost of those who they train. 
+- ### How does this application serve this purpose?
+    - da
 --- 
 
 ## Website Link
@@ -66,7 +68,16 @@
 ---
 
 ## User Stories
-- Purpose
+1. Beginner with no experience:
+    - As a beginner with no background in fitness, I want access to a trustable source of health training so that I can become healthy and fit in a positive and sustainable manner.
+2.  User with moderate experience:
+    - As a person who has a moderate amount of exercise and health knowledge, I want access to learning from members of the community with a focus on healthy habits so that I can broaden my scope and diversify my understanding of health. 
+3.	Trainer interested in training others:
+    - As a trainer, I want to help the fitness community by posting easy to understand information so that beginners can use it to grow their health toolset. 
+4.	Expert interested in sourcing different ideas to exercise:
+    - As an expert in fitness, I want to be aware of the current trends in fitness and of how the fitness community is evolving so that I can keep up to date in my own practice.
+5.	User interested in purchasing merchandise:
+    - As a member of the general public I want access to merchandise that represents a positive brand so that I can spread awareness of that brand. 
 ---
 
 ## Wireframes
@@ -88,6 +99,8 @@
 ---
 
 ## Provide your database schema design (Ask teej what this is??)
+- plan ERD
+- discuss the relations of the ERD
 --- 
 
 ## Describe the way tasks are allocated and tracked in your project
