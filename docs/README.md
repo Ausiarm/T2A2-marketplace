@@ -177,13 +177,13 @@
 
 ## Third Party Services
 - Heroku
-    - Used for live deployment due to ease of access as well as ability to deploy for free while under a certain amount of data usage.
+    - An online hosting service that has a range of packages for everyone from students up to enterprise businesses. Based off the needs of the project, a user may choose to opt for any one of heroku's possible options for deployment. In addition to offering hosting services, heroku has a quick and easy guide in their documentation that will help and first timer quickly understand how to deploy a development project to a live state. Used for live deployment due to ease of access as well as ability to deploy for free while under a certain amount of data usage.
 - Amazon S3
     - Amazon's cloud storage for images/media proved to be very helpful for storing uploaded photos outside of the application so that load times would not become extraneous in the event of high traffic and usage of the site. 
 - Stripe
-    - Stripe's easy to integrate functionality, along with its free use proved to be the perfect tool for implementing a payment service. Additionally, it allows for much safer interaction with user's private payment information that could potentially be handled poorly in the event that an application was attempting to store it on the back-end.
+    - Stripe's easy to integrate functionality, along with its free use proved to be the perfect tool for implementing a payment service. Additionally, it allows for much safer interaction with user's private payment information that could potentially be handled poorly in the event that an application was attempting to store it on the back-end. Through interaction with the api key provided by Stripe website can access the sensitive information that is passed through Stripe in order to present a purchaser with appropriate information while also being sure to have that information guarded with high levels of encryption. 
 - Ultrahook 
-    - Ultrahook served as the free service that allowed for the creation of a webhook that would catch user information and route it to the server so that the application could effectively integrate with stripe and be able to process user receipts as well as allowing payments to be properly processed.
+    - Ultrahook served as the free service that allowed for the creation of a webhook that would catch user information and route it to the server when specified for a checkout.session.completed instance. By doing this the application could effectively integrate with Stripe and be able to process user receipts as well as allowing payments to be properly processed.
 - Github
     - Github served for version control throughout the process of developing the app. As is the case with all other projects, version control proved critical when the application broke and changes were impossible to rectify. 
 - Trello
@@ -192,6 +192,14 @@
     - Ruby on Rails, the language that this app was developed in, normally uses SQL or SQL lite. However, for this project it was required to make use of postgreSQL for the database. 
 - Diagrams.net
     - This service, while not directly included in the app, was helpful for creation of a succinct and easy to understand ERD as well as sitemap. 
+- Devise
+    - Devise is a gem available to the public for incorporation into ruby applications. It comes with a built-in suite of services that extend far beyond the scope of this application. For the purposes that it was used here, devise managed all user authentication and helped to create the views necessary for a user to create and subsequently log in to a unique account that is bound to them alone. 
+- Simple form
+    - Simpleform is a gem available to the public for incorporation into ruby applications. In conjunction with other gems, simpleform can be used to create seamless and easy to incoporate forms into a web application. In this app it was used to create the layout of the devise views that a user will interact with when signing up, creating a listing, and destroying one. 
+- Pundit
+    - Pundit is a gem available to the public for incorporation into ruby applications. Pundit makes it easy to create and manage policies that govern the access or authorization of users throughout the application. For the purposes of this app pundit was incorporated to control who has administrative positions. Anyone labled admin under the pundit policy may access and edit any listing while standard users may only edit their own listings. 
+- Bootstrap
+    - Bootstrap is a gem available to the public for incorporation into ruby applications. A one stop shop for anything style related in a ruby on rails app. Bootstrap was used to create each of the views that a user sees when interacting with this application. Through bootstrap all listings are able to presented to potential purchasers as cards. Along with this, a jumbotron display was utilized in order to present the home page in a simple and clean manner. The bootstrap library has countless modifications that can be utilized to change the styling of a webpage and will be used moving forward with later iterations of the website. 
 ---
 
 ## Model Relationships
