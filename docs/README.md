@@ -1,4 +1,4 @@
-# T2A2 Marketplace Project - FitFoundation
+# T2A2 Marketplace Project - Themelio
 
 
 ## Problem To Be Solved
@@ -96,6 +96,8 @@
         - Utilized Amazon S3 for storage of images
     - Ultrahook
         - Utilized in conjunction with stripe to capture payment information and store in databases as well as presenting to the user. 
+    - PostgreSQL
+        - ***
 ---
 
 ## User Stories
@@ -114,9 +116,12 @@
 ## Wireframes
 - ![Wireframes](FF_Wireframe.png)
     - These served as a platform to narrow down the scope of the project, they have been left unmodified as the ultimate goal of the project is to get to the point where it reflects the wireframe design. They can be further broken down into desktop, tablet, and mobile views:
-        - Desktop
-        - tablet
-        - Mobile
+        - Desktop ** need to elaborate on these points
+            - 
+        - tablet ** need to elaborate on these points
+            - 
+        - Mobile ** need to elaborate on these points
+            - 
 
 ---
 
@@ -179,6 +184,10 @@
     - Github served for version control throughout the process of developing the app. As is the case with all other projects, version control proved critical when the application broke and changes were impossible to rectify. 
 - Trello
     - Trello provided the platform for monitoring daily effectivness in task completion as well as creating a proper schedule that led to on time delivery of the project.
+- PostgreSQl
+    - ***
+- Diagrams.net
+    - ***
 ---
 
 ## Describe your projects models in terms of the relationships (active record associations) they have with each other
@@ -194,9 +203,20 @@
 ## Discuss the database relations to be implemented in your application
 ---
 
-## Provide your database schema design (Ask teej what this is??)
-- plan ERD
-- discuss the relations of the ERD
+## Provide your database schema design
+- Schema photos for evidential reference:
+    - ![Schema_1](Schema_1.png)
+    - ![Schema_2](Schema_2.png)
+    - ![Schema_3](Schema_3.png)
+- The photos above lay out the Schema for the database. This file, located in app/db is the repository for all the tables that are included in the database. An application administrator can make changes to the database (and subsequently the schema file) through use of migrations that are generated in rails. It is best practice to never modify the schema file itself as utilizing migrations allows for the reversal of changes if need be. In essence, a migration is a modification that is made to a table in order to change or add entity-bearing columns or other features to it. 
+- It can be observed that along with the models mentioned above(listing, user, order, and payment), the schema file also includes a few active storage tables as well. These tables are automatically rendered for the user when creating a rails project in conjunction with scaffolding. To make these changes to the schema one must enter ```rails db:migrate``` after creation of the project. This commond will run through all migrations in the migration folder and commit any changes to the schema file that need to be made that have yet to be committed.
+- A user can observe migrations in the same location as the schema file and one that was used to add ```username``` to the user model can be seen below. 
+    - ![User_migration](user_migration.png)
+- In the migration pictured above, please note the add_column line. This is an active record method that allows the user to write ruby code that the rails console can convert into SQL language that will then modify the postgreSQL database that houses the data for this application. In addition to what was stated above, once this migration is created by running ```rails g migration AddUsernameToUser``` all the user needs to do is run ```rails db:migrate``` and the changes will be added to the database and the schema file will be updated. In the case of this specific example one would expect to see username as a column in the user table within the schema file. Sure enough, and pictured below, this change has been made in the schema file. 
+    - ![User_schema](user_schema.png)
+<br>
+
+- The goal for this project was to aim high and reduce complexity in the building process. Keeping with this the schema file for this release version of Themelio has a limited number of tables that, though limited, serve the purposes of providing this MVP with the basic structural database it needs in order to run. In the future more tables will be added to house the data required to add more functionality to user interaction as well as accrediting different users through means such as liking/rating reviews.
 --- 
 
 ## Describe the way tasks are allocated and tracked in your project
