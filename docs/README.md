@@ -201,6 +201,10 @@
 --- 
 
 ## Discuss the database relations to be implemented in your application
+- This application makes use of one kind of relation: One-to-many. Briefly touched on in the section above, more specifc information follows about the description of a one-to-many relationship. 
+    - This type of relationship is often utilized whenever there is a need to house information about entities that can create an unlimited number of entities that are then able to be accessed by other users. In other words, a one-to-many relationship is one in which an entity in one table (which can be referred to as the parent entitiy) can reference multiple entities of another table (known as the child entity). Why is this important? Imagine if instead of a one-to-many, the user and listing tables had a one-to-one relationship. In this scenario a user would only be able to create a single listing and after this they would no longer have the ability to create more without creating another unqiue identity (a whole different user profile). In order to denote a one-to-many relationship in a database ERD, specific graphical representation is necessary. While there are a few different options one can resort to, the one chosen for this application utilizes the built in functionality of ERD's created on [diagrams.net](https://app.diagrams.net/). This application represents this relationship by connecting two entities with a line. At one end it can be seen that there is a 1, indicating the entity in the relationship that is unique and represent the "one" in one-to-many. At the other end an asterisk can be seen. This indicates the "many" part of the one-to-many relationship. In the example below this is demonstrated with user and listing.
+        - ![revised_erd](revised_ERD.png)
+    - [Source](https://www.techopedia.com/definition/25122/one-to-many-relationship) 
 ---
 
 ## Provide your database schema design
